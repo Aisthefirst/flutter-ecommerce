@@ -1,0 +1,14 @@
+{
+    "User": [        
+        {
+          "nama" : "Ahmad Azhar Darmawan",
+          "email": "wicardinata@gmail,com",
+          "phone": "083875119803"          
+        },
+        {
+            "nama" : "Nurul Azizah",
+            "email": "nurulaz@gmail,com",
+            "phone": "083875119308"          
+          }
+      ]
+}
