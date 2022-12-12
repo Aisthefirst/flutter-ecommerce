@@ -36,7 +36,7 @@ class _Home_PageState extends State<Home_Page> {
                   mainAxisSpacing: 10),
               itemCount: datashop.length,
               itemBuilder: (BuildContext context, index) {
-                final Datashop shop = datashop[index];
+                Datashop shop = datashop[index];
                 return Card(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15)),
@@ -46,7 +46,7 @@ class _Home_PageState extends State<Home_Page> {
                       SizedBox(
                         width: 150,
                         child: Image.asset(
-                          shop.image,
+                          "assets/roti2.jpg",
                           fit: BoxFit.cover,
                         ),
                       ),

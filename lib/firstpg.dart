@@ -18,7 +18,7 @@ class Beranda extends StatelessWidget {
       endDrawer: NavDrawer(),
       body: ListView(
         children: [
-          Image(image: AssetImage('assets/rumaroti.jpg'), fit: BoxFit.cover),
+          // Image(image: AssetImage('assets/rumaroti.jpg'), fit: BoxFit.cover),
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 10),
             child: Text(

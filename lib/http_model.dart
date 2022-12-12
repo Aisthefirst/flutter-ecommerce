@@ -1,31 +1,36 @@
+import 'package:ecommer/models/person_model.dart';
+import 'package:get/get.dart';
 import 'package:http/http.dart';
 import 'dart:convert';
 
-class HttpModel {
+class HttpModel extends GetxController {
   // final String id;
   // final String email;
   // final String firstName;
   // final String lastName;
-  // final String avatar;
 
-  int? id;
-  String? email;
-  String? fullName;
-  String? avatar;
+  PersonModelResponse? model;
+  var isLoading = true.obs;
 
-  HttpModel({this.id, this.email, this.fullName, this.avatar});
+  Future<PersonModelResponse> connectToAPi() async {
+    var response = await get(Uri.parse('https://reqres.in/api/users/'));
 
-  static Future<HttpModel> connectToAPi(int id) async {
-    Response response = await get(Uri.parse('https://reqres.in/api/users/$id'));
+    PersonModelResponse model =
+        PersonModelResponse.fromJson(jsonDecode(response.body));
 
-    var data = json.decode(response.body);
+    return model;
+  }
 
-    return HttpModel(
-      id: data['data']['id'],
-      email: data['data']['email'],
-      fullName: data['data']['first_name'] + "" + data['data']['last_name'],
-      avatar: data['data']['avatar'],
-    );
+  void getApi() async {
+    model = await connectToAPi();
+    isLoading.value = false;
+  }
+
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
+    getApi();
   }
 
 //   factory HttpModel.fromJson(Map<String, dynamic> json) {

@@ -32,9 +32,9 @@ class Login extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(
-                  height: 14,
-                ),
+                // SizedBox(
+                //   height: 14,
+                // ),
                 Text(
                   'Login to your account',
                   style: TextStyle(
@@ -42,68 +42,70 @@ class Login extends StatelessWidget {
                     color: Colors.black.withOpacity(0.5),
                   ),
                 ),
-                SizedBox(
-                  height: 36,
-                ),
+                // SizedBox(
+                //   height: 36,
+                // ),
                 Text(
                   'Email',
                   style: TextStyle(
                     fontSize: 16,
                   ),
                 ),
-                SizedBox(
-                  height: 12,
+                // SizedBox(
+                //   height: 12,
+                // ),
+                Form(
+                  child: TextField(
+                    controller: emailController,
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        hintText: 'Email'),
+                  ),
                 ),
-                TextField(
-                  controller: emailController,
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      hintText: 'Email'),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
+                // SizedBox(
+                //   height: 20,
+                // ),
                 Text(
                   'Password',
                   style: TextStyle(
                     fontSize: 16,
                   ),
                 ),
-                SizedBox(
-                  height: 12,
+                // SizedBox(
+                //   height: 12,
+                // ),
+                Form(
+                  child: TextField(
+                    controller: pwdController,
+                    obscureText: true,
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        hintText: 'Password'),
+                  ),
                 ),
-                TextField(
-                  controller: pwdController,
-                  obscureText: true,
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      hintText: 'Password'),
-                ),
-                SizedBox(
-                  height: 13,
-                ),
-                TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Forget Password?',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                          color: Color.fromARGB(255, 255, 166, 1)),
-                    )),
-                SizedBox(
-                  height: 159,
-                ),
+                // SizedBox(
+                //   height: 13,
+                // ),
+                // TextButton(
+                //     onPressed: () {},
+                //     child: Text(
+                //       'Forget Password?',
+                //       style: TextStyle(
+                //           fontWeight: FontWeight.bold,
+                //           fontSize: 16,
+                //           color: Color.fromARGB(255, 255, 166, 1)),
+                //     )),
+               
                 Center(
                   child: Column(
                     children: [
                       SizedBox(
                         height: 30,
-                        width: 250,
+                        width: 150,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 255, 166, 1),
@@ -117,7 +119,7 @@ class Login extends StatelessWidget {
                                 Navigator.pushReplacement(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => Beranda(),
+                                    builder: (context) => const Beranda(),
                                   ),
                                 );
                               } else {

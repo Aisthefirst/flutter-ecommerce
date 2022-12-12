@@ -21,10 +21,10 @@ class NavDrawer extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.blueGrey,
             ),
-            currentAccountPicture: ClipOval(
-              child:
-                  Image(image: AssetImage('assets/pp.jpg'), fit: BoxFit.cover),
-            ),
+            // currentAccountPicture: ClipOval(
+            //   child: Image(
+            //       image: AssetImage('assets/angie.jpg'), fit: BoxFit.cover),
+            // ),
             accountName: Text('Ahmad Azhar Darmawan'),
             accountEmail: Text('wicardinata@gmail.com'),
           )),
@@ -83,6 +83,7 @@ class NavDrawer extends StatelessWidget {
     );
   }
 }
+
 Widget _drawerItem(
     {required IconData icon,
     required String text,
