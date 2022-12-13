@@ -22,7 +22,7 @@ class Menu extends StatelessWidget {
           ListTile(
             contentPadding: EdgeInsets.all(10),
             title: Text(
-              "Roti",
+              "Croissant",
               maxLines: 2,
             ),
             subtitle: Text(
@@ -54,7 +54,7 @@ class Menu extends StatelessWidget {
               maxLines: 2,
             ),
             subtitle: Text(
-                "Sebuah Croissant yang penuh akan cita rasa, resep rahasia menghasilkan perpaduan kerenyahan dan kelembutan di setiap gigitannya."),
+                "Pastry lembut dan renyah, perpaduan gurih dan manis yang pas menjadikan menu sarapan yang nikmat"),
             leading: Container(
               width: 50,
               height: 50,
@@ -77,7 +77,7 @@ class Menu extends StatelessWidget {
               maxLines: 2,
             ),
             subtitle: Text(
-                "Sebuah Croissant yang penuh akan cita rasa, resep rahasia menghasilkan perpaduan kerenyahan dan kelembutan di setiap gigitannya."),
+                "Garlic bread bisa menjadi teman nugas kamu, gurihnya mampu membuat moodmu bagus untuk menugas :)"),
             leading: Container(
               width: 50,
               height: 50,
@@ -100,7 +100,7 @@ class Menu extends StatelessWidget {
               maxLines: 2,
             ),
             subtitle: Text(
-                "Sebuah Croissant yang penuh akan cita rasa, resep rahasia menghasilkan perpaduan kerenyahan dan kelembutan di setiap gigitannya."),
+                "Menu yang satu ini memang tidak ada lawan, kelezatan di setiap gigitannya membuat tongkronganmu menjadi lebih hangat"),
             leading: Container(
               width: 50,
               height: 50,
@@ -123,7 +123,7 @@ class Menu extends StatelessWidget {
               maxLines: 2,
             ),
             subtitle: Text(
-                "Sebuah Croissant yang penuh akan cita rasa, resep rahasia menghasilkan perpaduan kerenyahan dan kelembutan di setiap gigitannya."),
+                "Si kecil manis ini mungkin terlihat kecil, namun ia mampu membuatmu goodmood :)"),
             leading: Container(
               width: 50,
               height: 50,
@@ -146,7 +146,7 @@ class Menu extends StatelessWidget {
               maxLines: 2,
             ),
             subtitle: Text(
-                "Sebuah Croissant yang penuh akan cita rasa, resep rahasia menghasilkan perpaduan kerenyahan dan kelembutan di setiap gigitannya."),
+                "Rasakan suasana manis dalam setiap gigitannya, Blueberry Cheesecake mungkin menjadi opsi pilihan kamu untuk memperbaiki suasana hati yang kacau "),
             leading: Container(
               width: 50,
               height: 50,
