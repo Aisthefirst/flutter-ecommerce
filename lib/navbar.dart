@@ -21,29 +21,31 @@ class NavDrawer extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.blueGrey,
             ),
-            // currentAccountPicture: ClipOval(
-            //   child: Image(
-            //       image: AssetImage('assets/angie.jpg'), fit: BoxFit.cover),
-            // ),
+            currentAccountPicture: ClipOval(
+              child: Image(
+                  image: NetworkImage(
+                      'https://i.pinimg.com/564x/50/8f/a1/508fa16592a0baccf9790fe5c0be537e.jpg'),
+                  fit: BoxFit.cover),
+            ),
             accountName: Text('Ahmad Azhar Darmawan'),
             accountEmail: Text('wicardinata@gmail.com'),
           )),
           _drawerItem(
-              icon: Icons.person_outlined,
+              icon: Icons.menu_book,
               text: 'Menu',
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => Menu()));
               }),
-          _drawerItem(
-              icon: Icons.people_outlined,
-              text: 'Riwayat Pembelian',
-              onTap: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => History()));
-              }),
+          // _drawerItem(
+          //     icon: Icons.people_outlined,
+          //     text: 'Riwayat Pembelian',
+          //     onTap: () {
+          //       Navigator.of(context).pop();
+          //       Navigator.of(context).push(MaterialPageRoute(
+          //           builder: (BuildContext context) => History()));
+          //     }),
           _drawerItem(
               icon: Icons.people_outlined,
               text: 'Info',

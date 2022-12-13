@@ -27,7 +27,7 @@ class Beranda extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 10),
             child: Text(
-              'Tidar Bakery siap menyajikan kue lezat tak terlupakan untuk melengkapi momen spesial Anda. Dalam hal mutu Tidar Bakery telah menyandang Penghargaan Piagam Bintang Satu Keamanan Pangan dari BADAN POM RI dengan nomor 101014.3507.159 dan telah bersertifikat halal dari MUI dengan nomor 55005301610014',
+              'Tidar`s Patisseries siap menyajikan kue lezat tak terlupakan untuk melengkapi momen spesial Anda. Dalam hal mutu Tidar`s Patisseries telah menyandang Penghargaan Piagam Bintang Satu Keamanan Pangan dari BADAN POM RI dengan nomor 101014.3507.159 dan telah bersertifikat halal dari MUI dengan nomor 55005301610014',
               style: const TextStyle(fontSize: 16),
             ),
           ),
@@ -35,30 +35,30 @@ class Beranda extends StatelessWidget {
             padding: const EdgeInsets.only(left: 10, top: 2, bottom: 4),
             child: Row(
               children: [
-                Text(
-                  'Rating',
-                  style: const TextStyle(fontSize: 18, color: Colors.orange),
-                ),
-                const Icon(
-                  Icons.star_rounded,
-                  color: Colors.orange,
-                ),
-                const Icon(
-                  Icons.star_rounded,
-                  color: Colors.orange,
-                ),
-                const Icon(
-                  Icons.star_rounded,
-                  color: Colors.orange,
-                ),
-                const Icon(
-                  Icons.star_rounded,
-                  color: Colors.orange,
-                ),
-                const Icon(
-                  Icons.star_rounded,
-                  color: Colors.orange,
-                ),
+                // Text(
+                //   'Rating',
+                //   style: const TextStyle(fontSize: 18, color: Colors.orange),
+                // ),
+                // const Icon(
+                //   Icons.star_rounded,
+                //   color: Colors.orange,
+                // ),
+                // const Icon(
+                //   Icons.star_rounded,
+                //   color: Colors.orange,
+                // ),
+                // const Icon(
+                //   Icons.star_rounded,
+                //   color: Colors.orange,
+                // ),
+                // const Icon(
+                //   Icons.star_rounded,
+                //   color: Colors.orange,
+                // ),
+                // const Icon(
+                //   Icons.star_rounded,
+                //   color: Colors.orange,
+                // ),
               ],
             ),
           ),
@@ -79,13 +79,13 @@ class Beranda extends StatelessWidget {
                   child: Row(
                     children: [
                       const Icon(
-                        Icons.route,
+                        Icons.map,
                         color: Colors.white,
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 5),
                         child: const Text(
-                          "Rute",
+                          "Maps",
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
@@ -111,7 +111,7 @@ class Beranda extends StatelessWidget {
                       Container(
                         margin: const EdgeInsets.only(left: 5),
                         child: const Text(
-                          "Pesan",
+                          "Order",
                           style: TextStyle(color: Colors.black),
                         ),
                       ),
@@ -137,7 +137,7 @@ class Beranda extends StatelessWidget {
                       Container(
                         margin: const EdgeInsets.only(left: 5),
                         child: const Text(
-                          "Telepon",
+                          "Call",
                           style: TextStyle(color: Colors.black),
                         ),
                       ),

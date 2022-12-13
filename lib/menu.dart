@@ -11,7 +11,7 @@ class Menu extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'Toko Roti ',
+          'Our`s Menu',
           textAlign: TextAlign.center,
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
         ),
