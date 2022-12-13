@@ -45,10 +45,10 @@ class _Home_PageState extends State<Home_Page> {
                     children: [
                       SizedBox(
                         width: 150,
-                        child: Image.asset(
-                          "assets/roti2.jpg",
-                          fit: BoxFit.cover,
-                        ),
+                        //   child: Image.asset(
+                        //     shop.image,
+                        // fit: BoxFit.cover,
+                        //   ),
                       ),
                       Divider(
                         height: 2,

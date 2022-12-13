@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:ecommer/http_model.dart';
 import 'package:ecommer/navbar.dart';
 import 'package:get/get.dart';
+import 'data.dart';
 
 class Info extends StatefulWidget {
   const Info({super.key});
@@ -33,15 +34,15 @@ class _InfoState extends State<Info> {
             : ListView.builder(
                 itemCount: controller.model!.data!.length,
                 itemBuilder: (BuildContext context, int index) {
+                  final Datashop shop = datashop[index];
                   return ListTile(
                     contentPadding: EdgeInsets.all(10),
                     title: Text('${controller.model!.data![index].firstName}'),
-                    subtitle: Text("Yang?"),
+                    subtitle: Text(shop.price),
                     leading: CircleAvatar(
                       backgroundImage: NetworkImage(
                           controller.model!.data![index].avatar.toString()),
                     ),
-                    trailing: Text("13.42 PM"),
                   );
                 },
               )));

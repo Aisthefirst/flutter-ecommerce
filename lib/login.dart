@@ -25,6 +25,7 @@ class Login extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Image(image: NetworkImage('https://picsum.photos/250?image=9')),
                 Text(
                   'Welcome Back',
                   style: TextStyle(
@@ -99,7 +100,7 @@ class Login extends StatelessWidget {
                 //           fontSize: 16,
                 //           color: Color.fromARGB(255, 255, 166, 1)),
                 //     )),
-               
+
                 Center(
                   child: Column(
                     children: [
