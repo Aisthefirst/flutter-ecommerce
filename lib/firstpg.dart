@@ -13,12 +13,17 @@ class Beranda extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.orange,
-        title: Text('Rumah Roti'),
+        title: Text('Tidar`s Patisseries'),
       ),
       endDrawer: NavDrawer(),
       body: ListView(
         children: [
           // Image(image: AssetImage('assets/rumaroti.jpg'), fit: BoxFit.cover),
+          Image(
+            image: NetworkImage(
+                'https://dcassetcdn.com/design_img/2406116/503299/503299_12572140_2406116_c4e9c32a_image.jpg'),
+            fit: BoxFit.cover,
+          ),
           Padding(
             padding: const EdgeInsets.only(top: 20, left: 10),
             child: Text(
@@ -142,28 +147,28 @@ class Beranda extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            padding: const EdgeInsets.only(left: 10, right: 10),
-            child: Column(
-              children: [
-                Text(
-                  'Etalase Produk klik disini',
-                  textAlign: TextAlign.justify,
-                  style: const TextStyle(fontSize: 15),
-                ),
-                IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Home_Page(),
-                        ));
-                  },
-                  icon: Icon(Icons.shopping_cart_checkout_outlined),
-                )
-              ],
-            ),
-          )
+          // Container(
+          //   padding: const EdgeInsets.only(left: 10, right: 10),
+          //   child: Column(
+          //     children: [
+          //       Text(
+          //         'Etalase Produk klik disini',
+          //         textAlign: TextAlign.justify,
+          //         style: const TextStyle(fontSize: 15),
+          //       ),
+          //       IconButton(
+          //         onPressed: () {
+          //           Navigator.push(
+          //               context,
+          //               MaterialPageRoute(
+          //                 builder: (context) => Home_Page(),
+          //               ));
+          //         },
+          //         icon: Icon(Icons.shopping_cart_checkout_outlined),
+          //       )
+          //     ],
+          //   ),
+          // )
         ],
       ),
     );

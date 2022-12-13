@@ -16,16 +16,15 @@ class Login extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.orange,
-        title: Text('Rumah Roti'),
+        title: Text('Tidar`s Patisseries'),
       ),
       body: Scaffold(
         body: Container(
           padding: const EdgeInsets.all(16),
           child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              // mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image(image: NetworkImage('https://picsum.photos/250?image=9')),
                 Text(
                   'Welcome Back',
                   style: TextStyle(
@@ -33,9 +32,9 @@ class Login extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                // SizedBox(
-                //   height: 14,
-                // ),
+                SizedBox(
+                  height: 14,
+                ),
                 Text(
                   'Login to your account',
                   style: TextStyle(
@@ -43,18 +42,18 @@ class Login extends StatelessWidget {
                     color: Colors.black.withOpacity(0.5),
                   ),
                 ),
-                // SizedBox(
-                //   height: 36,
-                // ),
+                SizedBox(
+                  height: 36,
+                ),
                 Text(
                   'Email',
                   style: TextStyle(
                     fontSize: 16,
                   ),
                 ),
-                // SizedBox(
-                //   height: 12,
-                // ),
+                SizedBox(
+                  height: 12,
+                ),
                 Form(
                   child: TextField(
                     controller: emailController,
@@ -65,18 +64,18 @@ class Login extends StatelessWidget {
                         hintText: 'Email'),
                   ),
                 ),
-                // SizedBox(
-                //   height: 20,
-                // ),
+                SizedBox(
+                  height: 20,
+                ),
                 Text(
                   'Password',
                   style: TextStyle(
                     fontSize: 16,
                   ),
                 ),
-                // SizedBox(
-                //   height: 12,
-                // ),
+                SizedBox(
+                  height: 12,
+                ),
                 Form(
                   child: TextField(
                     controller: pwdController,
@@ -88,9 +87,9 @@ class Login extends StatelessWidget {
                         hintText: 'Password'),
                   ),
                 ),
-                // SizedBox(
-                //   height: 13,
-                // ),
+                SizedBox(
+                  height: 13,
+                ),
                 // TextButton(
                 //     onPressed: () {},
                 //     child: Text(

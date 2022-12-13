@@ -22,7 +22,7 @@ class _InfoState extends State<Info> {
         appBar: AppBar(
           centerTitle: true,
           title: Text(
-            'Toko Roti ',
+            'Founder Tidar`s Patisseries',
             textAlign: TextAlign.center,
             style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
           ),
